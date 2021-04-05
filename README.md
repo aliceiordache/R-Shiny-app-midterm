@@ -1,9 +1,11 @@
 # R-Shiny-app-midterm
 
 The following app displays a wordcloud of the most used words by characters from the Game of Thrones tv series. The app is the last step of a previous personal project, evaluating through basic algorithms and neural networks the probability that a given character pronounced a given sentence.
+
 As you can see from the app, on the up right you can choose the character from the show and by clicking on "generate" the corresponding wordcloud will generate.
 
 For what concerns the technicalities of the app:
+
   Data Acquisition: data imported locally from a csv;
   
   Data Visualization: using Plotly a plot returning the characters who say most sentences;
