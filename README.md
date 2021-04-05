@@ -4,9 +4,11 @@ The following app displays a wordcloud of the most used words by characters from
 As you can see from the app, on the up right you can choose the character from the show and by clicking on "generate" the corresponding wordcloud will generate.
 
 For what concerns the technicalities of the app:
-  Data Acquisition: data imported locally from a csv
-  Data Visualization: using Plotly a plot returning the characters who say most sentences
-  Data Analysis: mostly text cleaning.
+  Data Acquisition: data imported locally from a csv;
+  
+  Data Visualization: using Plotly a plot returning the characters who say most sentences;
+  
+  Data Analysis: mostly text cleaning;
   - 3 interactive choices in the WordCloud, namely: select the character to be displayed; choose how many words to be dsiplayed in the wordcloud per total; choose to display words depending on their frequency.
  
 There is also a user-defined function: the one creating the TermDocument Matrix.
