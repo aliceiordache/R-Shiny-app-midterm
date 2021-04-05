@@ -1,7 +1,12 @@
 # R-Shiny-app-midterm
 
-Preso il dataset di got e fatto la shiny.
-Data acquisition: c'è, prendiamo i dati da un local csv.
-Data visualization: c'è, riportato un plot dei characters che dicono più frasi (usando plotly)
-Data analysis: c'è, molto basic, ma c'è la pulizia del testo. Interactive choices ce ne sono 3 nel wordcloud: puoi scegliere il personaggio di cui mostrare il wc, puoi scegliere quante parole mostrare nel wc in totale e puoi scegliere di filtrare le parole in base alla loro frequenza. Una user-defined function c'è, ed è quella che ti crea la Term-Document Matrix
-L'unica cosa che forse manca è la code optimization perchè è talmente già veloce di suo che non c'è bisogno di parallel computing o cose della nasa. Un reactive component c'è ed è quello che ti genera la TermDocument Matrix. Questo vuol dire che se tu prima scegli Arya, lui ti calcola la matrice e te la salva in cache. Poi scegli Cersei, la calcola per lei. Poi scegli di nuovo Arya, la matrice è già stata calcolata e usa quella e quindi velocizza (non è parallel computing ma è code optimization comunque...)
+The following app displays a wordcloud of the most used words by characters from the Game of Thrones tv series. The app is the last step of a previous personal project, evaluating through basic algorithms and neural networks the probability that a given character pronounced a given sentence.
+As you can see from the app, on the up right you can choose the character from the show and by clicking on "generate" the corresponding wordcloud will generate.
+
+For what concerns the technicalities of the app:
+Data Acquisition: data imported locally from a csv
+Data Visualization: using Plotly a plot returning the characters who say most sentences
+Data Analysis: mostly text cleaning.
+  - 3 interactive choices in the WordCloud, namely: select the character to be displayed; choose how many words to be dsiplayed in the wordcloud per total; choose to display words depending on their frequency.
+There is also a user-defined function: the one creating the TermDocument Matrix.
+No parallel computing techniques, given that the app is very fast, therefore not necessary in this exercise. However, we can highlight that there is a reactive component: the one generating the TermDocument Matrix. This speeds up the code (code optimizionation), even though it does not concern parallel computing.
