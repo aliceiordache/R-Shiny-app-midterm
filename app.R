@@ -183,17 +183,4 @@ ui <- dashboardPage(
   ))
 )
 
-# Run the app.
-####### IMPORTANT #######
-# ONCE UPLOADED TO GITHUB, THIS LINE MUST BE
-# REMOVED. IN ORDER TO RUN THE APP,
-# ONE WILL SIMPLY RUN THE FOLLOWING COMMANDS FROM
-# THE CONSOLE (WITHOUT WRITING THEM IN THIS SCRIPT):
-#
-# library(shiny)
-# runGitHub("github_username", "github_reponame", ref = "main")
-#
-# EDIT THE 'REF' PARAMETER VALUE WITH THE GITHUB
-# BRANCH NAME.
-#########################
 shinyApp(ui, server)
