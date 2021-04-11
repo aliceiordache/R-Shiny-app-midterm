@@ -182,5 +182,3 @@ ui <- dashboardPage(
             ))
   ))
 )
-
-shinyApp(ui, server)
