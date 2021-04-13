@@ -1,7 +1,3 @@
-### IMPORTANT ###
-# BEFORE GOING THROUGH THE CODE, READ THE LAST COMMENT
-# AT THE BOTTOM OF THIS SCRIPT.
-
 # Load and install packages if required
 if (!require("pacman"))
   install.packages("pacman")
